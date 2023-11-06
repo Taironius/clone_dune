@@ -1,5 +1,34 @@
-$bgColor: blue;
+@use 'variaveis';
+@use 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 1em){
+    font-size: $fontSize;
+    color: variaveis.$corTextoNomes;
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(.85em);
+}
+
+.text--big {
+    @include text(min(1.5em,2.25vmin));
+}
+
+.text--tiny {
+    @include text(.65em)
 }
