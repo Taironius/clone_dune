@@ -1,5 +1,6 @@
 @use 'variaveis';
 @use 'header';
+@use 'hero';
 
 * {
     margin: 0;
@@ -9,12 +10,12 @@
 
 
 body {
-    background-color: variaveis.$corDeFundo;
+    background-color: #fff;//eliminar depois de pronto!
 }
 
 @mixin text($fontSize: 1em){
     font-size: $fontSize;
-    color: variaveis.$corTextoNomes;
+    color: variaveis.$corTexto;
 }
 
 .text {
@@ -32,3 +33,4 @@ body {
 .text--tiny {
     @include text(.65em)
 }
+
