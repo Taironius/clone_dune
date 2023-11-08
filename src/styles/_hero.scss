@@ -1,5 +1,24 @@
+@use 'variaveis';
+
 .hero {
     height: calc(100vh - 50px);
     background-image: url(../images/dune.png);
     background-size: cover;
+    text-align: center;
+
+    &__button{
+        margin-top: 80vh;
+        background-color: transparent;
+        color: variaveis.$corBotao;
+        transition: color .5s ease;
+        border: none;
+        font-weight: bold;
+
+        &:hover {
+            color: darken(variaveis.$corBotao, 30%);
+            
+        }
+    }
+
+    
 }
