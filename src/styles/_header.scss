@@ -1,6 +1,8 @@
 @use 'variaveis';
 
 .header {
+    top: 0;
+    left: 0;
     position: sticky;
     height: 50px;
     background-color: variaveis.$corDeFundoHeader;
