@@ -2,6 +2,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 0;
+        overflow-x: hidden;
 
         &__frames {
             height: 303.8px;
