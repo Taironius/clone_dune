@@ -7,6 +7,12 @@
         &__frames {
             height: 303.8px;
             position: relative;
+            opacity: .7;
+            transition: opacity .75s ease;
+
+            &:hover {
+                opacity: 1;
+            }
 
             &__image {
                 width: 100%;
