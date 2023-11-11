@@ -1,0 +1,44 @@
+.houses {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 100vh;
+
+    &__spot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0 0;
+        width: 80vw;
+        height: 60vw;
+        
+
+        img {
+            width: 100%;
+        }
+
+        &__Atreides {
+            background-image: url('https://www.dune-duna.pt/_nuxt/img/atreides.46cabd2.png');
+            background-size: cover;
+            grid-area: 1/1/3/3;
+        }
+        &__Harkonnen {
+            background-image: url('https://www.dune-duna.pt/_nuxt/img/harkonnen.03b579c.png');
+            background-size: cover;
+            grid-area: 1/3/3/5;
+        }
+        &__Fremen {
+            background-image: url('https://www.dune-duna.pt/_nuxt/img/fremen.fc1937e.png');
+            background-size: cover;
+            grid-area: 2/2/4/4;
+        }
+
+        &__label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: calc(50% - 1em);
+            color: #fff;
+        }
+    }
+}

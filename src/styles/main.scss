@@ -2,6 +2,7 @@
 @use 'header';
 @use 'hero';
 @use 'persona';
+@use 'houses';
 
 * {
     margin: 0;
@@ -11,7 +12,7 @@
 
 
 body {
-    background-color: #fff;//eliminar depois de pronto!
+    background-color: #0f0f0f;//eliminar depois de pronto!
 }
 
 @mixin text($fontSize: 1em){

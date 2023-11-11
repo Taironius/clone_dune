@@ -12,6 +12,7 @@
         color: variaveis.$corBotao;
         transition: color .5s ease;
         border: none;
+        text-transform: uppercase;
         font-weight: bold;
 
         &:hover {
