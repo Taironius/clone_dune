@@ -2,23 +2,15 @@
 
 .hero {
     height: calc(100vh - 50px);
-    background-image: url(../images/dune.png);
+    background-image: url('https://images6.alphacoders.com/117/1174530.jpg');
     background-size: cover;
-    text-align: center;
 
-    &__button{
-        margin-top: 80vh;
-        background-color: transparent;
-        color: variaveis.$corBotao;
-        transition: color .5s ease;
-        border: none;
-        text-transform: uppercase;
-        font-weight: bold;
+    @media (min-width: 376px) and (max-width: 768px){
+        height: 49vh;
+    }
 
-        &:hover {
-            color: darken(variaveis.$corBotao, 30%);
-            
-        }
+    @media (max-width: 375px){
+        height: 25vh;
     }
 
     

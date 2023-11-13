@@ -5,11 +5,15 @@
     top: 0;
     left: 0;
     position: sticky;
-    height: 50px;
+    height: auto;
     background-color: variaveis.$corDeFundoHeader;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
 
     &__logo {
         height: 50px
@@ -19,6 +23,10 @@
         display: flex;
         align-items: center;
         margin-right: 1em;
+
+        @media (max-width: 768px){
+            margin-right: 0;
+        }
 
         i {            
             color: variaveis.$corPrimaria;

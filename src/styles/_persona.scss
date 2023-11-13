@@ -4,11 +4,36 @@
         gap: 0;
         overflow-x: hidden;
 
+        @media (min-width: 376px) and (max-width: 768px){
+            grid-template-columns: 1fr 1fr 1fr;            
+        }
+
+        @media (max-width: 375px){
+            display: block;
+        }
+        
+        
+
+        
+
         &__frames {
             height: 303.8px;
             position: relative;
             opacity: .7;
             transition: opacity .75s ease;
+            cursor: pointer;
+
+            @media (min-width: 376px) and (max-width: 768px){
+                height: 250px;  
+            }
+
+            @media (max-width: 375px) {
+                height: 300px;
+                overflow: hidden;
+            }
+
+            
+            
 
             &:hover {
                 opacity: 1;
@@ -17,6 +42,8 @@
             &__image {
                 width: 100%;
                 position: absolute;
+
+                
             }
 
             &__nome {
